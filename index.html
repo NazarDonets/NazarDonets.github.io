@@ -81,10 +81,24 @@
                 <div class="container">
                     <h2 class="occupation-section__heading">Чем мы занимаемся</h2>
                     <ul class="occupation-list">
-                        <li class="occupation-item"><img src="./img/main_1.jpg" alt="Работа за ноутбуком" width="370" height="294"></li>
-                        <li class="occupation-item"><img src="./img/main_2.jpg" alt="Листание инстика во время работы за ноутбуком" width="370" height="294">
+                        <li class="occupation-item">
+                            <img src="./img/main_1.jpg" alt="Работа за ноутбуком" width="370" height="294">
+                            <div class="occupation-item__description">
+                                <p>Десктопные приложения</p>
+                            </div>
                         </li>
-                        <li class="occupation-item"><img src="./img/main_3.jpg" alt="Разглядывание цветовой палитры на планшене" width="370" height="294"></li>
+                        <li class="occupation-item">
+                            <img src="./img/main_2.jpg" alt="Листание инстика во время работы за ноутбуком" width="370" height="294">
+                            <div class="occupation-item__description">
+                                <p>Мобильные приложения</p>
+                            </div>
+                        </li>
+                        <li class="occupation-item">
+                            <img src="./img/main_3.jpg" alt="Разглядывание цветовой палитры на планшене" width="370" height="294">
+                            <div class="occupation-item__description">
+                                <p>Дизайнерские решения</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -356,23 +370,49 @@
                     <p class="contact-us__heading-text">
                         Оставьте свои данные, мы вам перезвоним
                     </p>
-                    <form class="contact-us-form">
-                        <label for="name">Имя</label>
-                        <input type="text" name="name" id="name">
+                    <form>
+                        <div class="contact-us-form__formfield">
+                            <input class="contact-us-form__input" type="text" name="name" id="name" placeholder=" ">
+                            <label class="contact-us-form__label" for="name">Имя</label>
+                            <span>
+                                <svg class="contact-us-form__input-icon contact-us-form__input-icon__name">
+                                    <use href="./icons/icons.svg#icon-contact-us-name"></use>
+                                </svg>
+                            </span>
+                        </div>
 
-                        <label for="tel">Телефон</label>
-                        <input type="tel" name="tel" id="tel">
-                        
-                        <label for="mail">Почта</label>
-                        <input type="email" name="mail" id="mail">
+                        <div class="contact-us-form__formfield">
+                            <input class="contact-us-form__input" type="tel" name="tel" id="tel"  placeholder=" ">
+                            <label class="contact-us-form__label" for="tel">Телефон</label>
+                            <span>
+                                <svg class="contact-us-form__input-icon contact-us-form__input-icon__phone">
+                                    <use href="./icons/icons.svg#icon-contact-us-phone"></use>
+                                </svg>
+                            </span>
+                        </div>
 
-                        <label for="comment">Комментарий</label>
-                        <textarea name="comment" id="comment" rows="6" cols="6"></textarea>
+                        <div class="contact-us-form__formfield">
+                            <input class="contact-us-form__input" type="email" name="mail" id="mail"  placeholder=" ">
+                            <label class="contact-us-form__label" for="mail">Почта</label>
+                            <span>
+                                <svg class="contact-us-form__input-icon contact-us-form__input-icon__email">
+                                    <use href="./icons/icons.svg#icon-contact-us-email"></use>
+                                </svg>
+                            </span>
+                        </div>
 
-                        <label for="terms-checkbox">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-                        <input type="checkbox" name="terms-checkbox" id="terms-checkbox">
+                        <div class="contact-us-form__formfield">
+                            <label class="contact-us-form__label__textarea" for="comment">Комментарий</label>
+                            <textarea class="contact-us-form__input__textarea" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                        </div>
 
-                        <button type="submit">Отправить</button>
+                        <div class="contact-us-form__formfield">
+                        <label class="checkbox-terms__description" for="terms-checkbox">
+                            <input class="contact-us-form__checkbox" type="checkbox" name="terms-checkbox" id="terms-checkbox">
+                            <span class="checkbox"></span>Соглашаюсь с рассылкой и принимаю&nbsp<a class="inline-url" href="#">Условия договора</a>
+                        </label>
+                        </div>
+                        <button class="contact-us-form__submit-btn" type="submit">Отправить</button>
                     </form>
                 </div>
             </div>
