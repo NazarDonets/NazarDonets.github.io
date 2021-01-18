@@ -123,7 +123,8 @@ header {
 .socials-list__item-link,
 .filter-btn,
 .portfolio-item-thumbnail__animated,
-.footer-subscribe__btn {
+.footer-subscribe__btn,
+.hero-btn {
 	transition: var(--transition);
 	transition-property: fill, color, background-color, transform, box-shadow,
 		border-color;
@@ -562,7 +563,9 @@ header {
 }
 
 .footer-subscribe__btn:hover,
-.footer-subscribe__btn:focus {
+.footer-subscribe__btn:focus,
+.hero-btn:hover,
+.hero-btn:focus {
 	background-color: white;
 	color: var(--brandblue);
 	fill: var(--brandblue);
