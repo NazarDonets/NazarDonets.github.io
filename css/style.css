@@ -560,6 +560,13 @@ header {
 	border: none;
 }
 
+.icon-subscribe {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin-left: 10px;
+}
+
 .footer-subscribe__input:placeholder-shown {
 	font-size: 16px;
 	line-height: 20px;
